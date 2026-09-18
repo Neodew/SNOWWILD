@@ -80,7 +80,7 @@ El proyecto también busca servir como una base que pueda seguir creciendo con n
 
 ## Autor
 
-Elvis.
+Neodew
 
 ## Licencia
 
