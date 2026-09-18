@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#17251f">
+    <meta name="color-scheme" content="dark">
+    <title>Snowwild</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main id="app">
+
+        <canvas id="game" width="960" height="540" aria-label="Mundo de juego de Snowwild">
+        </canvas>
+
+        <section id="menu" class="screen screen-menu" aria-label="Menú principal">
+
+            <div class="component component-menu-background">
+                <img id="menuBackground" class="menu-bg" src="img/general/menu.png" alt="" aria-hidden="true">
+            </div>
+
+            <div class="component component-menu-overlay" aria-hidden="true"></div>
+
+            <div class="component component-title">
+                <h1 id="gameTitle">SNOWWILD</h1>
+            </div>
+
+            <div class="component component-subtitle">
+                <p id="gameSubtitle">Snowwild es un juego de supervivencia de animales salvajes. Sal al mundo y sobrevive.</p>
+            </div>
+
+            <nav class="component component-main-buttons" aria-label="Menú principal">
+                <button id="start" class="menu-button menu-button-primary" type="button">Sobrevive</button>
+                <button id="servers" class="menu-button menu-button-primary" type="button">Servidores</button>
+                <button id="exit" class="menu-button menu-button-primary" type="button">Salir</button>
+            </nav>
+
+            <div class="component component-record"><span>Récord:</span> <b id="record">0</b> <span>días</span></div>
+
+            <div class="component component-controls">
+                <span>WASD/Flechas</span>
+                <span>F</span>
+                <span>G</span>
+                <span>R</span>
+            </div>
+
+        </section>
+
+        <section id="hud" class="screen screen-hud" aria-label="Interfaz del juego" hidden>
+
+            <div class="component hud-component hud-stats">
+                <div class="stat stat-health">
+                    <span class="stat-label">VIDA</span>
+                    <div class="stat-bar">
+                        <i id="hpBar"></i>
+                    </div>
+                    <b id="hpText">0/100</b>
+                </div>
+
+                <div class="stat stat-food">
+                    <span class="stat-label">COMIDA</span>
+                    <div class="stat-bar">
+                        <i id="foodBar"></i>
+                    </div>
+                    <b id="foodText">0</b>
+                </div>
+
+                <div class="stat stat-water">
+                    <span class="stat-label">AGUA</span>
+                    <div class="stat-bar">
+                        <i id="waterBar"></i>
+                    </div>
+                    <b id="waterText">0</b>
+                </div>
+
+                <div class="stat stat-energy">
+                    <span class="stat-label">ENERGÍA</span>
+                    <div class="stat-bar">
+                        <i id="energyBar"></i>
+                    </div>
+                    <b id="energyText">0</b>
+                </div>
+            </div>
+
+            <!-- info derecha -->
+            <div class="component hud-component hud-information">
+
+                <div class="hud-info-item hud-species">
+                    <span id="speciesName">—</span>
+                </div>
+
+                <div class="hud-info-item hud-weather">
+                    <span id="weather">—</span>
+                </div>
+
+                <div class="hud-info-item hud-clock">
+                    <span id="clock">00:00</span>
+                </div>
+
+                <div class="hud-info-item hud-day">
+                    <span>DÍA</span>
+                    <b id="day">1</b>
+                </div>
+            </div>
+
+            <div class="component hud-component hud-objective">
+                <div class="objective-title">
+                    <b id="objectiveTitle">supervivencia</b>
+                </div>
+
+                <div class="objective-description">
+                    <span id="objectiveText"> Encuentra agua y comida.</span>
+                </div>
+            </div>
+
+            <div id="notice" class="component hud-notification" hidden>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
