@@ -4,6 +4,9 @@ SnowWild es un juego 2D inspirado en la naturaleza y la vida salvaje. El proyect
 
 La idea principal es que el jugador no vea solamente personajes que siguen movimientos predefinidos, sino un ecosistema donde los animales puedan desplazarse, buscar recursos, alimentarse, descansar, huir de peligros e interactuar con su entorno.
 
+<img width="1002" height="308" alt="imagen" src="https://github.com/user-attachments/assets/87111711-b727-4e51-8796-e3dfe813a855" />
+
+
 ## ¿De qué trata?
 
 SnowWild presenta un mundo natural en 2D en el que diferentes animales forman parte de un ecosistema.
