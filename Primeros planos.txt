@@ -1,0 +1,19 @@
+Snowwild es un juego supervivencia vida salvaje autónoma PixelArt. Lenguajes(html, img, music) y Animales(conejo, lobo, venado, oso).
+
+img/: general/[menu.png, mapa, arbol, huella(dejas al caminar), pasto, agua, humo1 y humo2], [nombre_animal]/[arriba1.png, arriba2, abajo1, abajo2, derecha1, derecha2, izquierda1, izquierda2].
+
+music/:general/[menu.mp3, caminar, daño(cuando comes animales), agua, fondo(del juego), pasos, puntos(por dia vivido), viento(al caer la noche oscura)], [nombre_animal]/[nombre_animal]. 
+
+Dimensiones pixeles de imagen animales(derecha-izquierda(lateral), arriba-abajo(espaldar y frontal)): mapa(5000x5000), árbol(12x8), pasto(3x3), agua(8x8), huella(2x2), humo1y2(4x5), conejo(3x3,3x3), lobo(5x8,5x3), venado(7x8,7x3), oso(6x9,6x4).
+
+Vidas: conejo(5/100), lobo(50/100), venado(50/100), oso(90/100). número conejos>venado>lobo>oso.
+
+Menú: sobrevivir, tiempo(días vividos), salir(cierra la ventana).
+
+Personaje: Eres un animal al azar y debes sobrevivir los días que puedas. Teclas WASD y flechitas), comer f(pasto o animales), beber g, reproducir r.
+ 
+Clima: día dura 2 minutos, noche 2 minutos oscureciendo(+viento.mp3) y la temperatura baja, si no estas cerca de un árbol o de otro animal mueres, excepto el oso polar.
+
+Interfaz: en la pantalla del juego a la izquierda arriba (vida, comida, agua, energía), a la derecha (clima, tiempo, día). El mapa es amplio así que los animales se ven pequeños y la cámara sigue al personajes al moverse. La pantalla oscurece cuando cae la noche.
+
+Juego: animales salvajes sobreviven buscando comida y pareja. Tienen vida-barra celeste(macho) o rosado(hembra) sobre cada animal, aparearse(solo después de dar luz), lobo y oso comen venado y conejo, venado y conejo comen pasto, animales beben agua, agua no se acaba. lobo venado oso usan Caminar.mp3 y huellas1/huellas2 al moverse, menos el conejo. Al ser comidos usan animación humo1 y humo2, usar sonido del animal cuando mueren. Cuando mueres te manda al menú. Los árboles son sólidos. No debe haber pausa en el juego.
